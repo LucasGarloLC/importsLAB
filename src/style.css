@@ -1,0 +1,68 @@
+body {
+  background-image: url(/src/cardswallpaper.jpg);
+}
+
+main {
+  display: grid;
+  justify-content: center;
+}
+.header {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 120px;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -6px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+.score {
+  font-size: 50px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  width: 300px;
+  font-family: 'Gambetta', serif;
+  background-color: #C25E5E;
+  color: PaleGoldenRod;
+  padding: 15px 32px;
+  font-size: 32px;
+}
+
+.button:disabled {
+  background-color: brown;
+  color: aquamarine;
+  
+}
+.img-container, .button-container  {
+  display: flex;
+  justify-content: center;
+}
+
+.new-game, .queHubieraPasado, .stand {
+  display: none;
+}
