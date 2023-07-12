@@ -1,5 +1,9 @@
-import {funcionDameUnaCarta, funcionPlantarse, funcionNuevaPartida, funcionQueHubieraPasado} from "./motor";
-import {dameUnaCarta, nuevaPartida, plantarse, queHubieraPasadoButton} from "./ui";
+import { funcionDameUnaCarta, funcionNuevaPartida, funcionPlantarse, funcionQueHubieraPasado } from "./ui";
+
+const dameUnaCarta = document.getElementById("drawcard");
+const nuevaPartida = document.getElementById("new-game");
+const plantarse = document.getElementById("stand");
+const queHubieraPasadoButton = document.getElementById("queHubieraPasado");
 
 if(dameUnaCarta && dameUnaCarta instanceof HTMLElement){
     dameUnaCarta.addEventListener("click", funcionDameUnaCarta)
