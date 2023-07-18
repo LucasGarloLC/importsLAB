@@ -1,5 +1,5 @@
 import { partida } from "./modelo";
-import { dameValorCarta, generarNumeroAleatorio, sumarPuntos} from "./motor";
+import { dameValorCarta, generarNumeroAleatorio, sumarPuntos, obtenerEstadoPartida} from "./motor";
 
 const urlBase: string = "https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/"
 const formatoArchivo: string = ".jpg";
@@ -115,10 +115,10 @@ export const mostrarMensajePartida = (score: number): string => {
 };
 
 const finalDeLaMano = (): void => {
-    if (partida.estado === "IGUAL_A_SIETE_Y_MEDIO") {
+    if (obtenerEstadoPartida() === "IGUAL_A_SIETE_Y_MEDIO") {
         hemosGanadoPartida();
     }
-    if(partida.estado === "MAYOR_DE_SIETE_Y_MEDIO") {
+    if(obtenerEstadoPartida() === "MAYOR_DE_SIETE_Y_MEDIO") {
         hemosPerdidoPartida();
     }
 };

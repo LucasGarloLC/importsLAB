@@ -11,7 +11,6 @@ export const partida: Partida = {
 };
 
 export type ObjetoPartida =
-    "MENOR_DE_SIETE_Y_MEDIO"
-    "IGUAL_A_SIETE_Y_MEDIO"
-    "MAYOR_DE_SIETE_Y_MEDIO"
-;
+    "MENOR_DE_SIETE_Y_MEDIO" |
+    "IGUAL_A_SIETE_Y_MEDIO" |
+    "MAYOR_DE_SIETE_Y_MEDIO" 
